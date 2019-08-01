@@ -1,0 +1,46 @@
+git 和 svn  版本管理工具  git
+
+安装git 右键出现git bash here 就安装成功了
+
+快捷键：打个文件的开头，按tab键 自动给你补充
+
+配置：
+git  config  --global  user.name  "你的名称"
+ git  config  --global  user.email  "邮箱"
+
+查看是否配置成功：git config --global --list 查看是否配置成功
+
+
+git init 初始化仓库  .git的文件夹（.git文件有可能是隐藏了的  查看-》隐藏文件）
+git status 查看状态（看有没有被添加到暂存区或者本地版本库） 不是必须要输入的命令
+
+git add +文件名  就是添加到暂存区 （git add index.html）
+git add .  把所有的文件添加到暂存区
+
+git checkout -- 文件名  ，例如 git checkout -- index.html   把暂存区的拉取到工作区
+
+git commit -m '提交信息'  把暂存区的提交到本地版本库
+git log 查看本地版本库的版本
+git reset --hard  哈希码   回到某一个版本
+
+
+git init
+git add .
+git commit -m '提示信息'
+git remote add origin https://github.com/wangling55555/xiaomi11.git 跟远程服务器建立连接 
+git push -u origin master 第一次提交到远程仓库  git push(后面提交可以提交可以简写)
+
+后面更改
+git add .
+git commit -m '提示信息'
+git push 提交到远程版本库
+
+git pull 把远程版本库的代码下载下来并与我们的代码合并
+
+
+git clone 地址
+git add .
+git commit -m '提示信息'
+git push -u origin master 第一次提交到远程仓库  git push(后面提交可以提交可以简写)
+
+
